@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03112020-01
+      author: ismayil
+      changes:
+        - createTable:
+            tableName: teacher
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: teacher_pk
+                    nullable: false
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: age
+                  type: INTEGER
+                  constraints:
+                    nullable: false
+              - column:
+                  name: gender
+                  type: VARCHAR(10)
+                  constraints:
+                    nullable: false
+        - loadData:
+            tableName: teacher
+            separator: ,
+            file: classpath:/db/changelog/data/student.csv
