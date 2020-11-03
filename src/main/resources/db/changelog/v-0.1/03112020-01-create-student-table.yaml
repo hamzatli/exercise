@@ -23,7 +23,7 @@ databaseChangeLog:
                   name: age
                   type: INTEGER
                   constraints:
-                    nullable: false
+                    nullable: true
               - column:
                   name: gender
                   type: VARCHAR(10)
@@ -31,5 +31,5 @@ databaseChangeLog:
                     nullable: false
         - loadData:
             tableName: student
-            separator: ,
-            file: classpath:/db/changelog/data/student.csv
+            separator: ;
+            file: db/changelog/data/student.csv

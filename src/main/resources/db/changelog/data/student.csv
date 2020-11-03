@@ -1,5 +1,6 @@
-1,First, 10, MALE
-2,Second,11, MALE
-3,Third, 12, MALE
-4,Fourth,13, FEMALE
-5,Fifth, 14, FEMALE
+id;name;age;gender
+1;First;10; MALE
+2;Second;11; MALE
+3;Third;12; MALE
+4;Fourth;13; FEMALE
+5;Fifth;14; FEMALE
